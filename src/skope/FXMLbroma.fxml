@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="603.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="skope.FXMLbromaController">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Esto ha sido una broma">
+         <font>
+            <Font name="Avenir Next Regular" size="48.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Al ser una broma su contraseña y nombre de usuario están a salvo. Procure presatar atención a los programas que se descarga. Intente simpre descargarlo de la web del fabricante y no de terceros. La próxima vez puede que no sea una broma. El propósito de este programa es méramente educativo y sólo pretende ser una herramienta educativa y por tanto hacking ético. Si te ha gustado y quieres contactarme pudes escrivirme a fgadea95@outlook.com o entrar en https://github.com/fgadea" wrappingWidth="515.7119750976562">
+         <font>
+            <Font name="Avenir Next Regular" size="24.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre de Usuario: " translateX="-110.0">
+         <font>
+            <Font name="Avenir Next Regular" size="14.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña: " translateX="-130.0">
+         <font>
+            <Font name="Avenir Next Regular" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="usuario" strokeType="OUTSIDE" strokeWidth="0.0" translateX="80.0" translateY="-40.0" wrappingWidth="235.0">
+         <font>
+            <Font name="Avenir Next Regular" size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </Text>
+      <Text fx:id="contraseña" strokeType="OUTSIDE" strokeWidth="0.0" translateX="40.0" translateY="-40.0" wrappingWidth="230.9999979659915">
+         <font>
+            <Font name="Avenir Next Regular" size="14.0" />
+         </font>
+      </Text>
+      <RadioButton mnemonicParsing="false" onAction="#verContraseña" text="Ver contraseña" translateX="220.0" translateY="-60.0" />
+      <Button defaultButton="true" mnemonicParsing="false" onAction="#salir" prefHeight="39.0" prefWidth="114.0" style="-fx-border-color: #377caf; -fx-background-color: white; -fx-border-radius: 30;" text="Ok, salir" textFill="#377caf">
+         <font>
+            <Font name="Avenir Next Regular" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</VBox>
