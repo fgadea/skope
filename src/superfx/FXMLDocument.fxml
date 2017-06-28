@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1336.0" styleClass="anchorPane" stylesheets="@fxmlmain.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="superfx.FXMLDocumentController">
+   <children>
+      <AnchorPane prefHeight="768.0" prefWidth="1336.0">
+         <children>
+            <ImageView fx:id="background" fitHeight="776.0" fitWidth="1337.0" layoutX="-1.0" layoutY="5.0" pickOnBounds="true">
+               <image>
+                  <Image url="@Color%20Burst%201.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="icono" fitHeight="80.0" fitWidth="71.0" layoutX="633.0" layoutY="362.0" onMouseClicked="#skype" onMouseDragged="#moverIcono" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Captura%20de%20pantalla%202017-05-26%20a%20las%2016.01.42.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="1337.0" layoutX="-1.0" layoutY="734.0" pickOnBounds="true">
+               <image>
+                  <Image url="@barraMenuW10.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="menInicio" fitHeight="484.0" fitWidth="470.0" layoutY="251.0" pickOnBounds="true">
+               <image>
+                  <Image url="@menuW10.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="6.0" layoutY="734.0" mnemonicParsing="false" onAction="#botonInicio" opacity="0.0" prefHeight="40.0" prefWidth="35.0" />
+            <Button layoutX="396.0" layoutY="741.0" mnemonicParsing="false" onAction="#explorer" opacity="0.0" prefHeight="27.0" prefWidth="25.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnApagar" layoutX="12.0" layoutY="675.0" mnemonicParsing="false" onAction="#cerrar" opacity="0.0" prefHeight="27.0" prefWidth="50.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="btnAjustes" layoutX="8.0" layoutY="648.0" mnemonicParsing="false" onAction="#ajustes" opacity="0.0" prefHeight="27.0" prefWidth="63.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="btnExplorereMen" layoutX="8.0" layoutY="615.0" mnemonicParsing="false" onAction="#explordorArchivosMen" opacity="0.0" prefHeight="27.0" prefWidth="85.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

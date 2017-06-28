@@ -1,0 +1,27 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24-may-2017, 13:02:14
+    Author     : felipegadeallopis
+*/
+
+.anchorPane{
+}
+.barraTareas{
+    -fx-background-image: url("barraMenuW10.png");
+}
+
+.careta{
+    -fx-font-size: 200;
+    -fx-font-type: "Avenir Light";
+}
+
+.fondoPantalla{
+    -fx-background-image: url("high-resolution-star-wars-wallpaper-23.jpg");
+}
+.menuW10{
+    
+}

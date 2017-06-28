@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="511.0" prefWidth="706.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="skope.FXMLDocumentController">
+   <children>
+      <BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="707.0" style="-fx-background-color: white;">
+         <center>
+            <GridPane BorderPane.alignment="CENTER">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="159.0" minWidth="10.0" prefWidth="133.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="486.0" minWidth="10.0" prefWidth="432.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="196.0" minWidth="10.0" prefWidth="134.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="187.0" minHeight="10.0" prefHeight="92.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="101.0" minHeight="9.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="195.0" minHeight="10.0" prefHeight="66.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="231.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="151.0" minHeight="10.0" prefHeight="101.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="118.0" minHeight="10.0" prefHeight="89.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Text fx:id="txtIniSesion" strokeType="OUTSIDE" strokeWidth="0.0" text="Iniciar sesión" textAlignment="CENTER" wrappingWidth="436.21875" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Avenir Light" size="36.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="rellenar" focusTraversable="false" prefHeight="27.0" prefWidth="399.0" promptText="Correo electrónico, teléfono o Skype" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="50.0" right="45.0" top="7.0" />
+                     </GridPane.margin>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </TextField>
+                  <Text fx:id="noTienesCuenta" strokeType="OUTSIDE" strokeWidth="0.0" text="¿No tiene una cuenta?" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Avenir Next Regular" size="16.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="80.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Text fill="#377caf" onMouseClicked="#privacidadCookies" strokeType="OUTSIDE" strokeWidth="0.0" text="Privacidad y cookies" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets left="240.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Avenir Next Demi Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Text>
+                  <ImageView fitHeight="23.0" fitWidth="77.0" onMouseClicked="#microsoft" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <image>
+                        <Image url="@Captura%20de%20pantalla%202017-05-21%20a%20las%2012.50.10.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="180.0" top="60.0" />
+                     </GridPane.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Text fx:id="crearUna" fill="#377caf" onMouseClicked="#crearCuenta" strokeType="OUTSIDE" strokeWidth="0.0" text="Cree una." textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Avenir Next Demi Bold" size="16.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="250.0" />
+                     </GridPane.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Text>
+                  <Text fill="#377caf" onMouseClicked="#CondicionesUso" strokeType="OUTSIDE" strokeWidth="0.0" text="Condiciones de uso" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets left="70.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Avenir Next Demi Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Text>
+                  <ImageView fx:id="bSiguiente" fitHeight="49.0" fitWidth="380.0" onMouseClicked="#clicSiguiente" onMouseEntered="#mouseEntraSiguiente" onMouseExited="#mouseSaleSiguiente" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <image>
+                        <Image url="@Captura%20de%20pantalla%202017-05-21%20a%20las%2012.22.45.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="30.0" top="1.0" />
+                     </GridPane.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="bIniSesión" disable="true" fitHeight="55.0" fitWidth="181.0" onMouseClicked="#clicIniSesión" onMouseEntered="#mouseEntraIniSes" onMouseExited="#mouseSaleIniSes" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <image>
+                        <Image url="@Captura%20de%20pantalla%202017-05-21%20a%20las%2014.05.41.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="220.0" />
+                     </GridPane.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="bAtras" disable="true" fitHeight="49.0" fitWidth="380.0" onMouseClicked="#clicAtras" onMouseEntered="#mouseEntraAtras" onMouseExited="#mouseSaleAtras" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <image>
+                        <Image url="@Captura%20de%20pantalla%202017-05-21%20a%20las%2014.05.31.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="30.0" />
+                     </GridPane.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Text fx:id="olvidarContraseña" fill="#377caf" onMouseClicked="#olvidaContraeña" strokeType="OUTSIDE" strokeWidth="0.0" text="He olvidado mi contraseña" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Avenir Next Demi Bold" size="16.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="125.0" />
+                     </GridPane.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Text>
+                  <PasswordField fx:id="passwordField" disable="true" focusTraversable="false" promptText="Contraseña" style="-fx-background-color: white;" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="50.0" right="45.0" top="7.0" />
+                     </GridPane.margin>
+                  </PasswordField>
+                  <Separator prefHeight="3.0" prefWidth="379.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <GridPane.margin>
+                        <Insets left="45.0" right="45.0" top="25.0" />
+                     </GridPane.margin>
+                  </Separator>
+               </children>
+            </GridPane>
+         </center>
+         <top>
+            <AnchorPane prefHeight="31.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="32.0" fitWidth="45.0" layoutX="190.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Captura%20de%20pantalla%202017-05-21%20a%20las%2012.28.56.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="32.0" fitWidth="35.0" layoutX="240.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Captura%20de%20pantalla%202017-05-21%20a%20las%2012.29.04.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="32.0" fitWidth="35.0" layoutX="282.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Captura%20de%20pantalla%202017-05-21%20a%20las%2012.29.09.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="59.0" fitWidth="57.0" layoutX="329.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Captura%20de%20pantalla%202017-05-21%20a%20las%2012.29.13.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="32.0" fitWidth="35.0" layoutX="397.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Captura%20de%20pantalla%202017-05-21%20a%20las%2012.29.17.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="32.0" fitWidth="35.0" layoutX="447.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Captura%20de%20pantalla%202017-05-21%20a%20las%2012.29.24.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="32.0" fitWidth="35.0" layoutX="492.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Captura%20de%20pantalla%202017-05-21%20a%20las%2012.29.28.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="41.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="31.0" fitWidth="49.0" layoutX="422.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Captura%20de%20pantalla%202017-05-21%20a%20las%2012.56.04.png" />
+                     </image>
+                  </ImageView>
+                  <Separator prefHeight="3.0" prefWidth="707.0" />
+                  <Text fill="#377caf" layoutX="14.0" layoutY="23.0" onMouseClicked="#noPuedeIniSes" strokeType="OUTSIDE" strokeWidth="0.0" text="¿No puedes iniciar sesión?">
+                     <font>
+                        <Font name="Avenir Next Demi Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Text>
+                  <Text fill="#377caf" layoutX="465.0" layoutY="25.0" onMouseClicked="#facebook" strokeType="OUTSIDE" strokeWidth="0.0" text="Iniciar sesión a través de Facebook">
+                     <font>
+                        <Font name="Avenir Next Demi Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </bottom>
+      </BorderPane>
+   </children>
+</VBox>
